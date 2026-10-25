@@ -1,0 +1,127 @@
+/* ISMOS components. Every value comes from tokens.css. Prefix: ism- */
+.ism-root { background: var(--surface); color: var(--text); font-family: var(--font-sans); font-size: 17px; line-height: 28px; }
+.ism-root a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+.ism-root a:hover { color: var(--link-hover); }
+.ism-root :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+/* Label: Plex Mono uppercase, letterspaced .14em */
+.ism-label { font-family: var(--font-mono); font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted); }
+.ism-label--ai { color: var(--text); font-weight: 500; }
+.ism-label--on-color { color: var(--paper); }
+
+/* Button: radius-4, 44px target */
+.ism-btn { display: inline-flex; align-items: center; gap: var(--space-8); min-height: var(--tap-target); padding: 0 var(--space-16); border-radius: var(--radius-4); font-family: var(--font-sans); font-size: 15px; font-weight: 500; line-height: 1; cursor: pointer; border: 2px solid var(--action); background: var(--action); color: var(--on-action); text-decoration: none; }
+.ism-btn--secondary { background: transparent; color: var(--text); border-color: var(--text); }
+.ism-btn img { width: 20px; height: 20px; }
+
+/* Section head: number, title, 2px rule, right kicker */
+.ism-sectionhead { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-16); border-bottom: var(--rule-2) solid var(--rule-strong); padding-bottom: var(--space-8); }
+.ism-sectionhead__num { font-family: var(--font-mono); font-size: 13px; font-weight: 500; color: var(--text-muted); margin-right: var(--space-12); }
+.ism-sectionhead__title { font-family: var(--font-serif); font-size: 28px; line-height: 34px; font-weight: 400; color: var(--text-heading); margin: 0; display: inline; }
+
+/* Bar: the 6px device */
+.ism-bar { display: block; height: var(--rule-6); width: 32px; background: var(--bar); }
+
+/* Status tag: colour + icon + WORD, boxed */
+.ism-tag { display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid currentColor; padding: 2px 8px; font-family: var(--font-mono); font-size: 11.5px; font-weight: 600; letter-spacing: .1em; white-space: nowrap; color: var(--text); }
+.ism-tag svg { width: 14px; height: 14px; flex: none; }
+.ism-tag--alert { color: var(--alert); }
+
+/* Text field */
+.ism-field label { display: block; font-weight: 600; font-size: 15px; margin-bottom: 6px; color: var(--text); }
+.ism-field__input { display: block; width: 100%; box-sizing: border-box; min-height: 48px; padding: 0 var(--space-12); border: 1.5px solid var(--border-input); border-radius: var(--radius-4); background: var(--surface); color: var(--text); font: 400 17px/1 var(--font-sans); }
+.ism-field__input:hover { border-color: var(--border-strong); }
+.ism-field__input:focus-visible { border: 2px solid var(--border-strong); outline: 2px solid var(--focus); outline-offset: 2px; }
+.ism-field--error .ism-field__input { border: 2px solid var(--alert); }
+.ism-field__msg { display: flex; gap: 6px; align-items: flex-start; color: var(--alert); font-size: 15px; line-height: 22px; margin-top: 6px; }
+.ism-field__msg svg { width: 16px; height: 16px; flex: none; margin-top: 3px; }
+
+/* Course card: five elements, fixed order */
+.ism-card { display: flex; flex-direction: column; gap: var(--space-12); padding: var(--space-24); border: var(--rule-1) solid var(--hairline); border-radius: var(--radius-4); background: var(--surface); color: var(--text); text-decoration: none; }
+.ism-root .ism-card, .ism-root .ism-card:hover { color: var(--text); text-decoration: none; }
+.ism-card:hover { border-color: var(--text); }
+.ism-card__title { font-family: var(--font-serif); font-size: 21px; line-height: 28px; font-weight: 500; color: var(--text-heading); margin: 0; }
+.ism-card__text { font-size: 15px; line-height: 24px; margin: 0; }
+.ism-card__facts { display: flex; gap: var(--space-16); padding-top: var(--space-12); border-top: var(--rule-1) solid var(--hairline); font-family: var(--font-mono); font-size: 13px; font-weight: 500; color: var(--text-muted); }
+
+/* Teacher on a course card: 32px circle photo + name. The only image a card carries. */
+.ism-card__teacher { display: flex; align-items: center; gap: var(--space-8); font-size: 15px; line-height: 24px; font-weight: 500; color: var(--text); }
+.ism-avatar { width: 32px; height: 32px; border-radius: var(--radius-circle); object-fit: cover; flex: none; box-shadow: 0 0 0 1px var(--hairline); }
+.ism-avatar--lg { width: 64px; height: 64px; }
+.ism-avatar--xl { width: 96px; height: 96px; }
+.ism-avatar--initials { display: inline-grid; place-items: center; background: var(--logwood-100); color: var(--ink); font-family: var(--font-mono); font-size: 12px; font-weight: 500; box-shadow: none; }
+
+/* Progress: 6px bar on track, count as a figure */
+.ism-progress__head { display: flex; justify-content: space-between; gap: var(--space-16); font-size: 15px; line-height: 24px; }
+.ism-progress__count { font-family: var(--font-mono); font-weight: 500; font-variant-numeric: tabular-nums; }
+.ism-progress__track { height: var(--rule-6); background: var(--track); margin: var(--space-8) 0; }
+.ism-progress__fill { height: 100%; background: var(--bar); }
+.ism-progress__note { font-size: 13px; line-height: 20px; color: var(--text-muted); margin: 0; }
+
+/* Terminal: Hacker mode code surface */
+.ism-term { background: var(--ink); box-shadow: inset 0 0 0 1px var(--logwood-700); padding: 18px 20px; font: 400 15px/1.8 var(--font-mono); color: var(--paper); overflow-x: auto; }
+.ism-term > div { white-space: nowrap; }
+.ism-term .pr { color: var(--weld); }
+.ism-term .cm { color: var(--logwood-200); }
+.ism-term .al { color: var(--cochineal-300); display: flex; gap: 8px; align-items: center; }
+.ism-term a { color: var(--mauveine-200); text-decoration: underline; }
+.ism-term .cur { display: inline-block; width: .6em; background: var(--weld); }
+/* WCAG 2.2.2: the cursor may blink for 5 s at most, then stays solid; never with Reduce Motion. */
+@media (prefers-reduced-motion: no-preference) { .ism-term .cur { animation: ism-blink 1s steps(1) 5; } }
+@keyframes ism-blink { 50% { opacity: 0; } }
+
+/* V2 · Vibrant. Colour blocks and filled cards.
+   Each block re-points the role tokens, so every component inside it (label, bar, button, link, card text) takes the right colours. */
+.ism-block { padding: var(--space-64) var(--page-margin); background: var(--surface); color: var(--text); }
+.ism-block--main, .ism-card--main { --surface: var(--block-main); --text: var(--on-block-main); --text-heading: var(--on-block-main); --text-muted: var(--on-block-main); --link: var(--on-block-main); --link-hover: var(--weld); --bar: var(--bar-on-dark); --action: var(--action-on-color); --on-action: var(--on-action-on-color); --focus: var(--weld); --hairline: var(--logwood-200); }
+.ism-block--indigo, .ism-card--indigo { --surface: var(--indigo); --text: var(--paper); --text-heading: var(--paper); --text-muted: var(--paper); --link: var(--paper); --link-hover: var(--weld); --bar: var(--bar-on-dark); --action: var(--action-on-color); --on-action: var(--on-action-on-color); --focus: var(--weld); --hairline: var(--logwood-200); }
+.ism-block--support, .ism-card--support { --surface: var(--block-support); --text: var(--on-block-support); --text-heading: var(--on-block-support); --text-muted: var(--on-block-support); --link: var(--on-block-support); --link-hover: var(--weld); --bar: var(--bar-on-dark); --action: var(--action-on-color); --on-action: var(--on-action-on-color); --focus: var(--weld); --hairline: var(--logwood-200); }
+.ism-block--accent, .ism-card--accent { --surface: var(--block-accent); --text: var(--on-block-accent); --text-heading: var(--on-block-accent); --text-muted: var(--on-block-accent); --link: var(--on-block-accent); --link-hover: var(--on-block-accent); --bar: var(--bar-on-accent); --action: var(--ink); --on-action: var(--paper); --focus: var(--ink); --hairline: var(--ink); }
+.ism-block--highlight, .ism-card--highlight { --surface: var(--block-highlight); --text: var(--on-block-highlight); --text-heading: var(--on-block-highlight); --text-muted: var(--on-block-highlight); --link: var(--on-block-highlight); --link-hover: var(--mauveine); --bar: var(--mauveine); --action: var(--mauveine); --on-action: var(--paper); --focus: var(--ink); --hairline: var(--ink); }
+.ism-block[class*="ism-block--"] { background: var(--surface); color: var(--text); }
+.ism-card[class*="ism-card--"] { background: var(--surface); color: var(--text); border-color: var(--surface); }
+.ism-root .ism-card[class*="ism-card--"], .ism-root .ism-card[class*="ism-card--"]:hover { color: var(--text); }
+.ism-card[class*="ism-card--"]:hover { border-color: var(--text); }
+/* V2 · Colour cap card: a flat colour cap on top, the course on the surface below,
+   and a 2 px edge in the cap's own colour around the whole card. */
+.ism-card.ism-card--cap { padding: 0; gap: 0; overflow: hidden; border: var(--rule-2) solid var(--cap); }
+.ism-card.ism-card--cap:hover { border-color: var(--text); }
+.ism-card__cap { display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto 1fr; gap: var(--space-12); min-height: 120px; padding: var(--space-24); background: var(--cap); color: var(--on-cap); --text-muted: var(--on-cap); --bar: var(--cap-bar); }
+.ism-card__cap .ism-bar { grid-column: 1 / -1; }
+.ism-card__cap .ism-label { align-self: end; color: var(--on-cap); }
+.ism-card__count { grid-row: 2; grid-column: 2; align-self: end; text-align: right; font-family: var(--font-serif); font-size: 48px; line-height: 1; font-weight: 400; font-variant-numeric: tabular-nums; }
+.ism-card__count small { display: block; margin-top: var(--space-4); font-family: var(--font-mono); font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; }
+.ism-card__body { display: flex; flex-direction: column; gap: var(--space-12); padding: var(--space-24); flex: 1; }
+.ism-card__body .ism-card__facts { margin-top: auto; }
+.ism-cap--main { --cap: var(--block-main); --on-cap: var(--on-block-main); --cap-bar: var(--bar-on-dark); }
+.ism-cap--indigo { --cap: var(--indigo); --on-cap: var(--paper); --cap-bar: var(--bar-on-dark); }
+.ism-cap--support { --cap: var(--block-support); --on-cap: var(--on-block-support); --cap-bar: var(--bar-on-dark); }
+.ism-cap--accent { --cap: var(--block-accent); --on-cap: var(--on-block-accent); --cap-bar: var(--bar-on-accent); }
+.ism-cap--highlight { --cap: var(--block-highlight); --on-cap: var(--on-block-highlight); --cap-bar: var(--mauveine); }
+
+/* V2 · Editorial card: the professional course card. Paper (Ink in Hacker mode), one hairline,
+   the book motif, a large Literata lesson count and a three-column facts ledger. It sits inside a
+   Mauveine or Weld band, which carries the colour; its own tokens are not re-pointed by the band. */
+.ism-card.ism-card--editorial { --text: var(--on-card-editorial); --text-heading: var(--on-card-editorial); --text-muted: var(--card-editorial-muted); --hairline: var(--card-editorial-edge); --link: var(--on-card-editorial); background: var(--card-editorial); color: var(--on-card-editorial); border: var(--rule-1) solid var(--card-editorial-edge); }
+.ism-root .ism-card.ism-card--editorial, .ism-root .ism-card.ism-card--editorial:hover { color: var(--on-card-editorial); }
+.ism-card.ism-card--editorial:hover { border-color: var(--on-card-editorial); }
+.ism-card__head { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-16); padding-bottom: var(--space-8); border-bottom: var(--rule-2) solid var(--text); margin-bottom: var(--space-4); }
+.ism-card__book { width: 20px; height: 20px; flex: none; }
+.ism-card--editorial .ism-card__count { font-size: 44px; }
+.ism-card--editorial .ism-card__count small { color: var(--text-muted); }
+.ism-card--editorial .ism-card__title { font-size: 24px; line-height: 30px; font-weight: 400; }
+.ism-card__ledger { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-8); margin: var(--space-4) 0 0; padding-top: var(--space-12); border-top: var(--rule-1) solid var(--hairline); }
+.ism-card__ledger dt { font-family: var(--font-mono); font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted); }
+.ism-card__ledger dd { margin: 2px 0 0; font-family: var(--font-mono); font-size: 13px; line-height: 20px; font-weight: 500; font-variant-numeric: tabular-nums; }
+
+/* WCAG 2.4.11: sticky bars never cover the focused element. */
+html:has(.ism-root) { scroll-padding-top: calc(var(--size-control) + var(--space-16) + env(safe-area-inset-top, 0px)); scroll-padding-bottom: calc(var(--size-tabbar) + var(--space-16) + env(safe-area-inset-bottom, 0px)); }
+/* WCAG 1.4.12: text containers grow with the reader's spacing; nothing with text has a fixed height. */
+.ism-card, .ism-btn, .ism-block, .ism-tag, .ism-field__input { height: auto; }
+
+/* a button that is a link keeps its own type colour, not the link colour */
+.ism-root .ism-btn, .ism-root .ism-btn:hover { color: var(--on-action); text-decoration: none; }
+.ism-btn--ink { --action: var(--ink); --on-action: var(--paper); }
+.ism-btn--on-color { --action: var(--action-on-color); --on-action: var(--on-action-on-color); }
+.ism-block__title { font-family: var(--font-serif); font-weight: 400; font-size: clamp(36px, 6vw, 64px); line-height: 1.05; margin: var(--space-16) 0 var(--space-16); color: var(--text-heading); }
+.ism-block__lead { font-size: 19px; line-height: 30px; max-width: 34ch; margin: 0 0 var(--space-24); }

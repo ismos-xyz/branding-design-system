@@ -1,0 +1,16 @@
+<!-- @dsCard group="Forms" height=200 -->
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../../tokens/fonts.css">
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<link rel="stylesheet" href="../bundle.css"><meta charset="utf-8"><title>TextField</title>
+<style>html,body{margin:0} body{padding:24px} </style></head>
+<body class="ism-root">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+<div class="ism-field"><label for="a">Name</label><input class="ism-field__input" id="a" value="Ana"></div>
+<div class="ism-field ism-field--error"><label for="b">Email</label><input class="ism-field__input" id="b" value="ana@ismos" aria-invalid="true" aria-describedby="b-e">
+<div class="ism-field__msg" id="b-e"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 L22 20 H2 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/><rect x="11" y="9" width="2" height="6" fill="currentColor"/><rect x="11" y="16.5" width="2" height="2" fill="currentColor"/></svg><span><b>Error:</b> add a domain ending, e.g. ana@ismos.org</span></div></div>
+</div>
+</body>
+</html>
