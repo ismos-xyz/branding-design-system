@@ -1,0 +1,47 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../../tokens/fonts.css">
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<meta charset="utf-8">
+<title>ISMOS</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--surface); color:var(--text); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; width:960px; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; }
+  .art svg { display:block; width:480px; height:288px; }
+  .brand { fill:var(--mauveine); }
+  .support { fill:var(--logwood-800); }
+  .deep { fill:var(--text-heading); }
+  .weld { fill:var(--weld); }
+  .madder { fill:var(--madder); }
+  .blk { rx:var(--radius-0); }
+  .cut { fill:var(--surface); }
+  .words { position:absolute; left:var(--space-32); bottom:var(--space-32); max-width:440px; }
+  .name { margin:0; font-family:var(--font-serif); font-weight:400; font-size:120px; line-height:.92; color:var(--text-heading); }
+  .tag { margin:var(--space-12) 0 0 4px; font-size:14px; line-height:20px; color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!-- V2 · Vibrant: Mauveine slab 240×288 (Main, the largest share), Madder and Weld squares (Accent), Logwood 800 (Support), a second Mauveine block, the Weld 6 px bar on Mauveine. Flat, hard-edged, flush, square corners. -->
+<rect class="brand blk" x="0" y="0" width="240" height="288"/>
+<rect class="madder blk" x="240" y="0" width="144" height="144"/>
+<rect class="weld blk" x="240" y="144" width="144" height="144"/>
+<rect class="support blk" x="384" y="0" width="96" height="192"/>
+<rect class="brand blk" x="384" y="192" width="96" height="96"/>
+<rect class="weld blk" x="32" y="32" width="32" height="6"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">ISMOS</h1>
+<p class="tag">Loud, flat, happy, and easy to read. · V2 Vibrant</p>
+</div>
+</div>
+</body>
+</html>
