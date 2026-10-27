@@ -1,3 +1,4 @@
+<img width="960" height="960" alt="ISMOS · White BG" src="https://github.com/user-attachments/assets/1a0348a4-6b0b-4adb-b30a-a67cc2e7d8d5" />
 # ISMOS Design System · V2 · Vibrant
 
 Brand and UI system for ISMOS: colour, type, components, rules, accessibility (WCAG 2.2) and research (human-centred design).
